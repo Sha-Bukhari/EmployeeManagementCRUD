@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Employee Operations</title>
+</head>
+<body>
+<center>
+    <h1>Employee CRUD Operations</h1>
+    <form action="EmployeeServlet" method="post">
+        <label for="operation">Select Operation:</label>
+        <select name="operation" id="operation">
+            <option value="insert">Insert</option>
+            <option value="update">Update</option>
+            <option value="delete">Delete</option>
+            <option value="get">Get</option>
+        </select>
+        <br><br>
+        <label for="id">Employee ID:</label>
+        <input type="text" id="id" name="id" required>
+        <br><br>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name">
+        <br><br>
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email">
+        <br><br>
+        <label for="dept">Department:</label>
+        <input type="text" id="dept" name="dept">
+        <br><br>
+        <label for="salary">Salary:</label>
+        <input type="text" id="salary" name="salary">
+        <br><br>
+        <button type="submit">Submit</button>
+    </form>
+</center>    
+</body>
+</html>
